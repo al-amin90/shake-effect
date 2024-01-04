@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(38, 38, 38);
+}
+
+button {
+    padding: 12px 36px;
+    border: 10px solid tomato;
+    color: tomato;
+    font-weight: bold;
+    padding: 10px 25px;
+    font-size: 80px;
+    background-color: transparent;
+
+    &:hover {
+        color: white;
+        border: 10px solid white;
+        background-color: black;
+        animation: shaking 0.2s linear;
+    }
+}
+
+@keyframes shaking {
+    0% {
+        rotate: 20deg;
+    }
+
+    50% {
+        rotate: -20deg;
+    }
+
+    100% {
+        rotate: 20deg;
+    }
+}
